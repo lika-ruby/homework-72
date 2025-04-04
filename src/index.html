@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&family=Rubik:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <h1 class="main-title">Хочеш дізнатись інформацію про країну?</h1>
+        <input
+          placeholder="Введіть назву країни"
+          type="text"
+          class="input"
+          id="input"
+          autocomplete="off"
+        />
+        <div id="countries" class="countries">
+          <div class="countries-wrapper">
+            <p id="nothing" class="countries-nothing">
+              Поки нема результатів...
+            </p>
+          </div>
+          <ul id="countries-list" class="countries-list">
+            <li class="counties-item">
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+            <li class="counties-item">
+              <div class="countries-line"></div>
+              <p class="countries-name">Україна</p>
+            </li>
+          </ul>
+        </div>
+        <div id="country" class="country">
+          <h2 id="name" class="country-name">Україна</h2>
+          <div class="country-content">
+            <div class="country-left">
+              <p class="text">
+                Столиця: <span id="capital" class="data">Київ</span>
+              </p>
+              <p class="text">
+                Популяція: <span id="population" class="data">83416000</span>
+              </p>
+              <p class="text text-mar">Мови:</p>
+              <ul id="languages" class="country-langs">
+                <li class="country-lang">
+                  <p class="country-langname">Германська</p>
+                </li>
+                <li class="country-lang">
+                  <p class="country-langname">Французька</p>
+                </li>
+                <li class="country-lang">
+                  <p class="country-langname">Італійська</p>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="country-image"
+              src="./images/map-og-world.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

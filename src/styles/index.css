@@ -1,0 +1,180 @@
+*::selection {
+  background-color: #fff;
+  color: #00000090;
+}
+
+* {
+  transition: all 0.5s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat Alternates;
+  position: relative;
+  font-weight: 400;
+
+  background-color: #001b28;
+}
+
+.main {
+  width: 100dvw;
+  height: 100dvh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/map-og-world.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 32px;
+  outline: red dashed;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.main-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.input {
+  display: block;
+  width: 565px;
+  padding: 20px 60px;
+  border-radius: 60px;
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.countries {
+  display: none;
+  margin: 0 auto;
+  width: 565px;
+  padding: 40px 60px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 40px;
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.countries-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.countries-nothing {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.countries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.counties-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.countries-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.countries-line {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.country {
+  display: none;
+  width: 1141px;
+  padding: 80px 40px;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 40px;
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.country-name {
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.country-content {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.country-left {
+  width: 100%;
+}
+.text {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.text-mar {
+  margin-bottom: 16px;
+}
+.data {
+  font-weight: 400;
+}
+.country-langs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.country-langname {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.country-image {
+  width: 520px;
+  height: 416px;
+  border-radius: 40px;
+}
