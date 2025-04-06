@@ -19,18 +19,26 @@ body {
 }
 
 .main {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.fone {
   background-image: linear-gradient(to top, #0000004d, #0000004d), url("map-og-world.6834bf7c.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100dvw;
   height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .container {
   outline: dashed red;
   width: 1440px;
-  padding: 0 32px;
+  padding: 0 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,7 +76,6 @@ body {
   border: 3px solid #fff;
   border-radius: 40px;
   flex-direction: column;
-  gap: 20px;
   width: 565px;
   margin: 0 auto;
   padding: 40px 60px;
@@ -87,7 +94,13 @@ body {
   font-weight: 400;
 }
 
-.countries-list, .counties-item {
+.countries-list {
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+
+.counties-item {
   flex-direction: column;
   gap: 20px;
   display: flex;
@@ -166,8 +179,16 @@ body {
 }
 
 .country-image {
+  object-fit: cover;
   border-radius: 40px;
   width: 520px;
   height: 416px;
+}
+
+[data-pnotify] {
+  color: #fff;
+  background: #00000080;
+  border: 3px solid #fff;
+  border-radius: 40px;
 }
 /*# sourceMappingURL=homework-72.ebeadb08.css.map */
