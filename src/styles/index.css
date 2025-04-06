@@ -44,7 +44,6 @@ body {
 .container {
   width: 1440px;
   padding: 0 15px;
-  outline: red dashed;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
