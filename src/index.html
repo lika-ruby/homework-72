@@ -18,15 +18,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="../node_modules/@pnotify/core/dist/PNotify.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../node_modules/@pnotify/mobile/dist/PNotifyMobile.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <section class="main">
+    <section id="main" class="main">
+      <div class="fone"></div>
       <div class="container">
-        <h1 class="main-title">Хочеш дізнатись інформацію про країну?</h1>
+        <h1 class="main-title">
+          Do you want to now information about country?
+        </h1>
         <input
-          placeholder="Введіть назву країни"
+          placeholder="Enter name of country"
           type="text"
           class="input"
           id="input"
@@ -34,82 +47,11 @@
         />
         <div id="countries" class="countries">
           <div class="countries-wrapper">
-            <p id="nothing" class="countries-nothing">
-              Поки нема результатів...
-            </p>
+            <p id="nothing" class="countries-nothing">Even no results...</p>
           </div>
-          <ul id="countries-list" class="countries-list">
-            <li class="counties-item">
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-            <li class="counties-item">
-              <div class="countries-line"></div>
-              <p class="countries-name">Україна</p>
-            </li>
-          </ul>
+          <ul id="countries-list" class="countries-list"></ul>
         </div>
-        <div id="country" class="country">
-          <h2 id="name" class="country-name">Україна</h2>
-          <div class="country-content">
-            <div class="country-left">
-              <p class="text">
-                Столиця: <span id="capital" class="data">Київ</span>
-              </p>
-              <p class="text">
-                Популяція: <span id="population" class="data">83416000</span>
-              </p>
-              <p class="text text-mar">Мови:</p>
-              <ul id="languages" class="country-langs">
-                <li class="country-lang">
-                  <p class="country-langname">Германська</p>
-                </li>
-                <li class="country-lang">
-                  <p class="country-langname">Французька</p>
-                </li>
-                <li class="country-lang">
-                  <p class="country-langname">Італійська</p>
-                </li>
-              </ul>
-            </div>
-            <img
-              class="country-image"
-              src="./images/map-og-world.webp"
-              alt=""
-            />
-          </div>
-        </div>
+        <div id="country" class="country"></div>
       </div>
     </section>
     <script type="module" src="./index.js"></script>
